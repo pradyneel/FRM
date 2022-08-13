@@ -26,30 +26,30 @@ Designed the FRM web app using:
            
     
    - Search Flights by date and time.<br><br><br>
-    ![index](https://github.com/pradyneel/MiniCRM/blob/main/images/searchflights.png)
+    ![index](https://github.com/pradyneel/FRM/blob/main/images/searchflights.png)
     <br>
     
            
    - My Booking.<br><br><br>
-    ![index](https://github.com/pradyneel/MiniCRM/blob/main/images/mybookings.png)
+    ![index](https://github.com/pradyneel/FRM/blob/main/images/mybookings.png)
     <br>
     
 ## Admin
  - Login.<br><br><br>
-    ![index](https://github.com/pradyneel/MiniCRM/blob/main/images/adminlogin.png)
+    ![index](https://github.com/pradyneel/FRM/blob/main/images/adminlogin.png)
     <br>
     
                
    - Home.<br><br><br>
-    ![index](https://github.com/pradyneel/MiniCRM/blob/main/images/adminhome.png)
+    ![index](https://github.com/pradyneel/FRM/blob/main/images/adminhome.png)
     <br>
     
    
  - Add Flights.<br><br><br>
-    ![index](https://github.com/pradyneel/MiniCRM/blob/main/images/addnewflights.png)
+    ![index](https://github.com/pradyneel/FRM/blob/main/images/addnewflights.png)
     <br>
     
            
    - View all bookings.<br><br><br>
-    ![index](https://github.com/pradyneel/MiniCRM/blob/main/images/viewbookings.png)
+    ![index](https://github.com/pradyneel/FRM/blob/main/images/viewbookings.png)
     <br>
