@@ -11,17 +11,17 @@ Designed the FRM web app using:
 ## Screenshots
 ## User
  - Login.<br><br><br>
-    ![index](https://github.com/pradyneel/MiniCRM/blob/main/images/userlogin.png)
+    ![index](https://github.com/pradyneel/FRM/blob/main/images/userlogin.png)
     <br>
     
    
  - SignUp.<br><br><br>
-    ![index](https://github.com/pradyneel/MiniCRM/blob/main/images/usersignup.png)
+    ![index](https://github.com/pradyneel/FRM/blob/main/images/usersignup.png)
     <br>
        
     
    - Home.<br><br><br>
-    ![index](https://github.com/pradyneel/MiniCRM/blob/main/images/userhome.png)
+    ![index](https://github.com/pradyneel/FRM/blob/main/images/userhome.png)
     <br>
            
     
