@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>my booking</title>
+</head>
+
+<style>
+    table{
+        border-collapse: collapse;
+        width: 100%;
+    }
+
+    th, td{
+        padding: 8px;
+        text-align: left;
+        border-bottom: 1px solid #ddd;
+    }
+
+    tr:hover {
+        background-color: coral;
+    }
+</style>
+
+
+<body>
+    <h1 style="text-align: center;">My Booking</h1>
+
+    <br>
+    
+    <table>
+        <thead>
+            <td>Flight No</td>
+            <td>Flight Time</td>
+            <td>Flight Date</td>
+        </thead>
+
+        <tbody>
+            {% for book in books %}
+                <tr>
+                    <td>
+                        <h5>{{ book.flight_no }}</h5>
+                    </td>
+                    <td>
+                        <h5>{{ book.flight_time }}</h5>
+                    </td>
+                    <td>
+                        <h5>{{ book.flight_date }}</h5>
+                    </td>
+                </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+
+</body>
+</html>

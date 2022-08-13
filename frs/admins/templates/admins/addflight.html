@@ -1,0 +1,77 @@
+{% load static %}
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <script src="https://kit.fontawesome.com/64d58efce2.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="{%static 'admins/newflight.css' %}" alt="image" />
+    <title>Add Flights</title>
+</head>
+
+<body>
+
+    
+
+    <section id="interface">
+        <div class="topmenu">
+            <div class="n1">
+                <div>
+                    <i id="menu-btn" class='bx bx-menu'></i>
+                </div>
+                <div class="title">
+                   <h2> Add New Flights</h2>
+                </div>
+                
+            </div>
+
+        </div>
+
+        <div>
+            <div class="container">
+                <form method="POST" id="my-form">
+                    {% csrf_token %}
+
+                    <div class="form-group">
+                        <label for="flight_no">Enter Flight Number</label>
+                        <input type="text" id="flight_no" name ="flight_no" placeholder="Flight Number">
+                    </div>
+
+                    <div class="form-group2">
+                        <label for="flight_time">Enter Flight Time</label>
+                        <input type="time" id="flight_time" name="flight_time" placeholder="Flight Time">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="flight_seats">Enter Flight Seats</label>
+                        <input type="text" id="flight_seats" name="flight_seats" placeholder="Flight Seats">
+                    </div>
+                    <div class="form-group2">
+                        <label for="flight_date">Flight Date</label>
+                        <input type="date" id="" name="flight_date" placeholder="Flight Date">
+                    </div>
+
+                    <button type="submit" class="submit">Add Flight</button>
+                </form>
+            </div>
+        </div>
+        <div id="status"></div>
+    </section>
+
+    <script>
+        $('#menu-btn').click(function () {
+            $('#sidebar-menu').toggleClass("active");
+        })
+    </script>
+
+
+</body>
+
+</html>

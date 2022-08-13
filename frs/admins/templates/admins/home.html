@@ -1,0 +1,89 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link rel="stylesheet" href="{%static 'authenticate/home.css' %}"> -->
+
+    <title>Book Flight</title>
+</head>
+
+<style>
+    table{
+        border-collapse: collapse;
+        width: 100%;
+    }
+
+    th, td{
+        padding: 8px;
+        text-align: left;
+        border-bottom: 1px solid #ddd;
+    }
+
+    tr:hover {
+        background-color: coral;
+    }
+
+   label{
+    font-size: 18px;
+   }
+
+   #logout{
+    font-size: 18px;
+    padding: 5px;
+    margin: 15px;
+   }
+</style>
+
+
+<body>
+    <h1 style="text-align: center;">Welcome Admin</h1>
+
+    <a href="../alogout" style="padding: 5px; background-color: lightcoral;">Logout</a>
+
+    <h1 style="text-align: center;">Flights</h1>
+
+    <table>
+        <thead>
+            <td>Flight No</td>
+            <td>Flight Time</td>
+            <td>Flight Seats Left</td>
+            <td>Flight Date</td>
+            <td></td>
+        </thead>
+
+        <tbody>
+            {% for flight in flights %}
+                <tr>
+                    <td>
+                        <h5>{{ flight.flight_no }}</h5>
+                    </td>
+                    <td>
+                        <h5>{{ flight.flight_time }}</h5>
+                    </td>
+                    <td>
+                        <h5>{{ flight.flight_seats }}</h5>
+                    </td>
+                    <td>
+                        <h5>{{ flight.flight_date }}</h5>
+                    </td>
+                    
+                    <td>
+                        <h5><a href="../delete/{{flight.id}}">delete</a></h5>
+                    </td>
+                </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+
+    <br>
+    <br>
+    <br>
+
+    <a href="../addflight" style="padding: 5px;  background-color: lightcoral;">Add Flights</a>
+    <a href="../viewbooks" style="padding: 5px;  background-color: lightcoral;" >View Bookings</a>
+</body>
+</html>
